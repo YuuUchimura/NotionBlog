@@ -3,8 +3,8 @@ import Container from '../components/Container'
 export default function BlogLayout({ children, data }) {
   return (
     <Container
-      title={data.properties.Post.title[0].plain_text}
-      description={data.properties.Description.rich_text[0].plain_text}
+      title={data.properties.name.title[0].plain_text}
+      description={data.properties.Description.rich_text[0]}
       date={new Date(data.properties.Date.date.start)}
       type="article"
     >

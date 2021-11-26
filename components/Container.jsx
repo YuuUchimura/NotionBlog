@@ -36,7 +36,7 @@ export default function Container(props) {
         {meta.date && <meta property="article:published_time" content={meta.date} />}
       </Head>
       <Nav />
-      <main id="skip" className="px-4">
+      <main id="skip" className="text-center">
         {children}
         <Footer />
       </main>
