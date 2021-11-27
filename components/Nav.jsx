@@ -11,13 +11,12 @@ const ExternalLink = ({ href, children }) => (
   </a>
 )
 
-export default function Nav() {
+export const Nav = () => {
   return (
-    <nav className="flex justify-center items-center max-w-4xl w-full p-8 my-0 md:my-8 mx-auto">
-      <div>
-        <Link href="/">
-          <a className="p-1 sm:p-4 text-gray-900 hover:underline">Home</a>
-        </Link>
+    <nav className="flex justify-between h-48 max-w-4xl  md:my-8 mx-auto ">
+      <Link href="/">Home</Link>
+      <div className="align-text-bottom">
+        <Link href="/blog">Blog</Link>
         <ExternalLink href="#">Twitter</ExternalLink>
         <ExternalLink href="#">Git Hub</ExternalLink>
       </div>

@@ -1,13 +1,13 @@
 import { useRouter } from 'next/router'
 import Head from 'next/head'
-import Nav from './Nav'
-import Footer from './Footer'
+import { Nav } from './Nav'
+import { Footer } from './Footer'
 
-export default function Container(props) {
+export const Container = (props) => {
   const { children, ...customMeta } = props
   const router = useRouter()
   const meta = {
-    title: 'A Next.js, Notion, Tailwind CSS starter blog template',
+    title: 'Uchimura Blog',
     description: `An open-source starter blog template that is statically generated with Next.js, content powered by Notion and styled with Tailwind CSS.`,
     type: 'website',
     image: '/site.png',

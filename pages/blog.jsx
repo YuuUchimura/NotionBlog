@@ -2,16 +2,13 @@ import Image from 'next/image'
 import { Container } from '../components/Container'
 import Link from 'next/link'
 import { getNotionData } from '../lib/getNotionData'
-import { Introduction } from '../components/introduction'
 
-export default function Home({ posts }) {
+export default function blog({ posts }) {
   return (
     <Container>
-      <Introduction />
       {!posts.length && <p className="text-gray-600 mb-4">No posts found.</p>}
 
       {posts.map((post) => {
-        console.log(post.properties)
         return (
           <Link key={post.id} href={`/${post.properties.Slug.rich_text[0].plain_text}`}>
             <a className="w-full">
