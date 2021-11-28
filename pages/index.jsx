@@ -8,22 +8,6 @@ export default function Home({ posts }) {
   return (
     <Container>
       <Introduction />
-      {!posts.length && <p className="text-gray-600 mb-4">No posts found.</p>}
-
-      {posts.map((post) => {
-        console.log(post.properties)
-        return (
-          <Link key={post.id} href={`/${post.properties.Slug.rich_text[0].plain_text}`}>
-            <a className="w-full">
-              <div className="mb-8 w-full">
-                <h3 className="text-xl font-medium w-full text-gray-900">
-                  {post.properties.name.title[0].plain_text}
-                </h3>
-              </div>
-            </a>
-          </Link>
-        )
-      })}
     </Container>
   )
 }
