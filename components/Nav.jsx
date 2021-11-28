@@ -14,7 +14,7 @@ export const Nav = () => {
         <Image src="/images/avater.png" width={84} height={84} />
       </Link>
       <div className="flex justify-between w-36 items-end">
-        <Link href="#">About</Link>
+        <Link href="/about">About</Link>
         <Link href="/blog">Blog</Link>
       </div>
     </nav>
