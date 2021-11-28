@@ -1,24 +1,21 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const ExternalLink = ({ href, children }) => (
-  <a
-    className="p-1 sm:p-4 text-gray-900 hover:underline"
-    target="_blank"
-    rel="noopener noreferrer"
-    href={href}
-  >
+  <a className="hover:underline" target="_blank" rel="noopener noreferrer" href={href}>
     {children}
   </a>
 )
 
 export const Nav = () => {
   return (
-    <nav className="flex justify-between h-48 max-w-4xl  md:my-8 mx-auto ">
-      <Link href="/">Home</Link>
-      <div className="align-text-bottom">
+    <nav className="flex justify-between w-3/5 my-24 mx-auto items-center">
+      <Link href="/">
+        <Image src="/images/avater.png" width={84} height={84} />
+      </Link>
+      <div className="flex justify-between w-36 items-end">
+        <Link href="#">About</Link>
         <Link href="/blog">Blog</Link>
-        <ExternalLink href="#">Twitter</ExternalLink>
-        <ExternalLink href="#">Git Hub</ExternalLink>
       </div>
     </nav>
   )
