@@ -1,7 +1,5 @@
 import { useRouter } from 'next/router'
 import Head from 'next/head'
-import { Nav } from './Nav'
-import { Footer } from './Footer'
 
 export const Container = (props) => {
   const { children, ...customMeta } = props
@@ -35,11 +33,7 @@ export const Container = (props) => {
         <meta name="twitter:image" content={meta.image} />
         {meta.date && <meta property="article:published_time" content={meta.date} />}
       </Head>
-      <Nav />
-      <main id="skip" className="text-center">
-        {children}
-        <Footer />
-      </main>
+      <main className="text-center">{children}</main>
     </>
   )
 }

@@ -1,23 +1,23 @@
 import Image from 'next/image'
+import { Nav } from '../components/Nav'
+import { Footer } from '../components/Footer'
 import { Container } from '../components/Container'
 import Link from 'next/link'
-// import { getNotionData } from '../lib/getNotionData'
-// import { Introduction } from '../components/introduction'
 
-export default function Home({ posts }) {
+export default function Home() {
   return (
-    <Container>
-
-    </Container>
+    <>
+      <Nav />
+      <Container>
+        <div className="">
+          <div className="bg-background bg-no-repeat bg-cover fixed top-0 right-0 left-0 bottom-0 flex justify-center">
+            <h1 className="tracking-wider text-8xl mx-auto my-auto text-white font-serif">
+              YU UCHIMURA
+            </h1>
+          </div>
+        </div>
+      </Container>
+      <Footer />
+    </>
   )
 }
-
-// export const getStaticProps = async () => {
-//   const database = await getNotionData(process.env.NOTION_DATABASE_ID)
-
-//   return {
-//     props: {
-//       posts: database,
-//     },
-//   }
-// }
