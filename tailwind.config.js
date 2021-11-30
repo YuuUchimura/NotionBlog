@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        background: 'url(/images/background6.jpg)',
+        background1: 'url(/images/background1.jpg)',
+        background2: 'url(/images/background2.jpg)',
       },
       animation: {
         fade: 'fade 3s',
@@ -17,7 +18,9 @@ module.exports = {
       },
     },
     variants: {
-      extend: {},
+      extend: {
+        overflow: ['hover', 'focus'],
+      },
     },
     plugins: [],
   },

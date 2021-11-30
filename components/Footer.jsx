@@ -13,7 +13,6 @@ export const Footer = () => {
   return (
     <footer className="flex flex-col fixed left-0 right-0 bottom-0 max-w-5xl mx-auto w-full z-10">
       <hr className="w-full border-1 border-gray-200 mb-8" />
-
       <div className="flex items-end ml-auto mb-5">
         <div className="ml-5 mr-5">
           <ExternalLink href="https://twitter.com/Yuu_19960912">
@@ -22,7 +21,7 @@ export const Footer = () => {
         </div>
         <div>
           <ExternalLink href="https://github.com/YuuUchimura">
-            <img src="/images/github-icon.svg" width={38} height={38} alt="github-logo" />
+            <img src="/images/github_icon.png" width={38} height={38} alt="github-logo" />
           </ExternalLink>
         </div>
       </div>
