@@ -1,7 +1,10 @@
-import BlogLayout from '../layouts/BlogLayout'
+//lib
 import { getNotionData, getPage, getBlocks } from '../lib/getNotionData'
-import { Text, ListItem, Heading, ToDo, Toggle } from '../components/ContentBlocks'
+
+//components
 import { Nav } from '../components/Nav'
+import { Text, ListItem, Heading, ToDo, Toggle } from '../components/ContentBlocks'
+import BlogLayout from '../layouts/BlogLayout'
 
 const databaseId = process.env.NOTION_DATABASE_ID
 

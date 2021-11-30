@@ -1,7 +1,10 @@
+//lib
 import styled from 'styled-components'
 import Image from 'next/image'
-import { Container } from '../components/Container'
+
+//components
 import { Nav } from '../components/Nav'
+import { Container } from '../components/Container'
 import { Footer } from '../components/Footer'
 
 const ExternalLink = ({ href, children }) => (
