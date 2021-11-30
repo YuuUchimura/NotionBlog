@@ -1,4 +1,5 @@
-import {Container} from '../components/Container'
+//components
+import { Container } from '../components/Container'
 
 export default function BlogLayout({ children, data }) {
   return (

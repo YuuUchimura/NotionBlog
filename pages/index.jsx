@@ -1,3 +1,4 @@
+//components
 import { Nav } from '../components/Nav'
 import { Container } from '../components/Container'
 

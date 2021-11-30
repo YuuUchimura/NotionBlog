@@ -1,8 +1,10 @@
-import Image from 'next/image'
-import { Container } from '../components/Container'
+//lib
 import Link from 'next/link'
 import { getNotionData } from '../lib/getNotionData'
+
+//components
 import { Nav } from '../components/Nav'
+import { Container } from '../components/Container'
 
 export default function blog({ posts }) {
   return (
