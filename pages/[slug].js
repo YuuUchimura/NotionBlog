@@ -16,6 +16,7 @@ export default function Post({ page, blocks }) {
   return (
     <>
       <Nav/>
+      <div className="mt-32"></div>
       <BlogLayout data={page} content={blocks}>
         <span className="text-sm text-gray-700">
           {new Date(page.created_time).toLocaleString('en-US', {
@@ -25,7 +26,7 @@ export default function Post({ page, blocks }) {
           })}
         </span>
 
-        <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-5 text-black">
+        <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-10 text-black">
           {page.properties.name.title[0].plain_text}
         </h1>
 
