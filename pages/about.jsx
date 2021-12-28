@@ -8,17 +8,6 @@ import { Nav } from '../components/Nav'
 import { Container } from '../components/Container'
 import { Footer } from '../components/Footer'
 
-const ExternalLink = ({ href, children }) => (
-  <a
-    className="text-gray-500 hover:text-gray-600 transition"
-    target="_blank"
-    rel="noopener noreferrer"
-    href={href}
-  >
-    {children}
-  </a>
-)
-
 export default function About() {
   const HiddenScrollBar = styled.div`
     ::-webkit-scrollbar {
@@ -43,18 +32,16 @@ export default function About() {
             </div>
             <div className="w-full">
               <h2 className="text-5xl">うちむら ゆう</h2>
-
               <p className="my-3">平成８年９月１２日生まれ（２５歳）</p>
               <p className="my-1">茨城県 👉 東京 👉 神奈川県横浜市在住</p>
-              <p className="my-1">趣味: 映画鑑賞・アニメ鑑賞・音楽・筋トレ・旅行</p>
-              <p className="my-1">好きな言葉：人間は考える葦である</p>
-              <p className="my-1">好きな食べ物：カレー・寿司</p>
+              <p className="my-1">【趣味】 映画鑑賞・アニメ鑑賞・音楽・筋トレ・旅行</p>
+              <p className="my-1">【好きな言葉】人間は考える葦である</p>
+              <p className="my-1">【好きな食べ物】カレー・寿司</p>
               <p className="my-1">
                 カレーは好きすぎてスパイスから作っちゃうほどです👳🏽‍♂️
                 <br />
                 不味すぎて二度と作らないですけど（笑）
               </p>
-
               <div>
                 <h1 className="mt-10 mb-10 text-5xl">SKILL</h1>
                 <div className="flex flex-wrap">

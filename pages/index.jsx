@@ -1,6 +1,5 @@
 //lib
 import Link from 'next/link'
-import Image from 'next/image'
 
 //components
 import { Header } from '../components/Header'
@@ -8,7 +7,6 @@ import { Nav } from '../components/Nav'
 import { Container } from '../components/Container'
 import { getNotionData } from '../lib/getNotionData'
 import { MiniProfile } from '../components/MiniProfile'
-
 import { Footer } from '../components/Footer'
 
 export default function Home({ posts }) {

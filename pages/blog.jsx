@@ -2,7 +2,6 @@
 import Link from 'next/link'
 import { getNotionData } from '../lib/getNotionData'
 
-//ant
 
 //components
 import { Header } from '../components/Header'
