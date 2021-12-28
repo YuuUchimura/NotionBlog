@@ -34,7 +34,9 @@ export const Container = (props) => {
         <meta name="twitter:image" content={meta.image} />
         {meta.date && <meta property="article:published_time" content={meta.date} />}
       </Head>
-      <main className="text-center">{children}</main>
+      <div className="bg-gray-100">
+        <main className="w-4/5 mx-auto text-center">{children}</main>
+      </div>
     </>
   )
 }
