@@ -8,7 +8,7 @@ export const Nav = () => {
         <Link href="/">Home</Link>
         <div className="w-52 flex justify-around">
           <Link href="/about">About</Link>
-          <Link href="/blog">Blog</Link>
+          {/* <Link href="/blog">Blog</Link> */}
         </div>
       </div>
     </nav>
