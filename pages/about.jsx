@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Image from 'next/image'
 
 //components
+import { Header } from '../components/Header'
 import { Nav } from '../components/Nav'
 import { Container } from '../components/Container'
 import { Footer } from '../components/Footer'
@@ -26,59 +27,53 @@ export default function About() {
   `
   return (
     <>
+      <Header />
+      <Nav />
       <Container>
-        <Nav />
-        <div className="animate-fade bg-background2 bg-cover fixed top-0 right-0 left-0 bottom-0 flex justify-center">
-          <div className="flex w-11/12 fixed top-1/4">
+        <div className="flex flex-col justify-center items-center animate-fade min-h-screen w-full">
+          <div className="flex w-11/12">
             <div className="w-full">
-              <Image src="/images/avatar.png" width={300} height={300} alt="My avatar" />
+              <Image
+                className="rounded-full"
+                src="/images/my_icon.png"
+                width={400}
+                height={400}
+                alt="my_icon"
+              />
             </div>
-            <div className="w-full text-white">
+            <div className="w-full">
               <h2 className="text-5xl">うちむら ゆう</h2>
-              <HiddenScrollBar className="mt-5 h-4/5 overflow-y-scroll">
-                <p className="my-3">平成８年９月１２日生まれ（２５歳）</p>
-                <p className="my-1">茨城県 👉 東京 👉 神奈川県横浜市在住</p>
-                <p className="my-1">趣味: 映画鑑賞・アニメ鑑賞・筋トレ・旅行</p>
-                <p className="my-1">左右の名：●●</p>
-                <p className="my-1">
-                  こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。
-                  こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。
-                  こんにちは。 こんにちは。 こんにちは。
-                  こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。
-                  こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。
-                  こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。
-                  こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。
-                  こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。
-                  こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。
-                  こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。
-                  こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。
-                  こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。
-                  こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。
-                  こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。
-                  こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。
-                  こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。
-                  こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。 こんにちは。
-                </p>
-                <div>
-                  <h1 className="text-5xl">SKILL</h1>
-                  <div className="flex justify-around">
-                    <Image src="/images/html-5.svg" width={60} height={60} />
-                    <Image src="/images/css-3.svg" width={60} height={60} />
-                    <Image src="/images/javascript.svg" width={60} height={60} />
-                    <Image src="/images/react.svg" width={60} height={60} />
-                    <Image src="/images/nextjs.svg" width={60} height={60} />
-                    <Image src="/images/git-icon.svg" width={60} height={60} />
-                    <Image src="/images/github-icon.svg" width={60} height={60} />
-                    <Image src="/images/firebase.svg" width={60} height={60} />
-                    <Image src="/images/tailwindcss.svg" width={60} height={60} />
-                    <Image src="/images/notion.svg" width={60} height={60} />
-                  </div>
+
+              <p className="my-3">平成８年９月１２日生まれ（２５歳）</p>
+              <p className="my-1">茨城県 👉 東京 👉 神奈川県横浜市在住</p>
+              <p className="my-1">趣味: 映画鑑賞・アニメ鑑賞・音楽・筋トレ・旅行</p>
+              <p className="my-1">好きな言葉：人間は考える葦である</p>
+              <p className="my-1">好きな食べ物：カレー・寿司</p>
+              <p className="my-1">
+                カレーは好きすぎてスパイスから作っちゃうほどです👳🏽‍♂️
+                <br />
+                不味すぎて二度と作らないですけど（笑）
+              </p>
+
+              <div>
+                <h1 className="mt-10 mb-10 text-5xl">SKILL</h1>
+                <div className="flex flex-wrap">
+                  <Image src="/images/html-5.svg" width={60} height={60} />
+                  <Image src="/images/css-3.svg" width={60} height={60} />
+                  <Image src="/images/javascript.svg" width={60} height={60} />
+                  <Image src="/images/react.svg" width={60} height={60} />
+                  <Image src="/images/nextjs.svg" width={60} height={60} />
+                  <Image src="/images/git-icon.svg" width={60} height={60} />
+                  <Image src="/images/github-icon.svg" width={60} height={60} />
+                  <Image src="/images/firebase.svg" width={60} height={60} />
+                  <Image src="/images/tailwindcss.svg" width={60} height={60} />
+                  <Image src="/images/notion.svg" width={60} height={60} />
                 </div>
-              </HiddenScrollBar>
+              </div>
             </div>
           </div>
-          <Footer />
         </div>
+        <Footer />
       </Container>
     </>
   )

@@ -47,6 +47,8 @@ export default function Post({ page, blocks }) {
 
             case 'heading_3':
               return <Heading text={text} id={id} level={type} key={id} />
+            case 'description':
+              return <Heading text={text} id={id} level={type} key={id} />
 
             case 'bulleted_list_item':
             case 'numbered_list_item':
