@@ -34,6 +34,7 @@ export default function Home({ posts }) {
           </div>
           <MiniProfile />
         </div>
+        <Footer />
       </Container>
     </>
   )
