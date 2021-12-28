@@ -22,7 +22,7 @@ export const MiniProfile = () => {
         </p>
         <Link href="/about">
           <p className="text-xs text-blue-300 hover:text-blue-500 cursor-pointer my-5">
-            プロフィール詳細 >
+            プロフィール詳細
           </p>
         </Link>
       </div>
