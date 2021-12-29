@@ -16,7 +16,7 @@ export default function Home({ posts }) {
       <Nav />
       <Container>
         <div className="flex py-12">
-          <div className="">
+          <div>
             {!posts.length && <p claasName="text-gray-600 mb-4">No posts found.</p>}
             {posts.map((post) => {
               return (

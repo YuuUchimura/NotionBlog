@@ -9,8 +9,8 @@ export const MiniProfile = () => {
         <Image
           className="rounded-full"
           src="/images/my_icon.png"
-          width={200}
-          height={200}
+          width={150}
+          height={150}
           alt="my_icon"
         />
         <h2 className="my-2">うちむら ゆう</h2>
