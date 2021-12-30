@@ -19,9 +19,13 @@ export default function Home({ posts }) {
           <div>
             {!posts.length && <p claasName="text-gray-600 mb-4">No posts found.</p>}
             {posts.map((post) => {
+            console.log(post.properties.Date.date.start)
               return (
                 <Link key={post.id} href={`/${post.properties.Slug.rich_text[0].plain_text}`}>
                   <a className="w-5/6 text-2xl m-0 flex flex-col mb-12 bg-white shadow-lg">
+                    <p className="text-left text-gray-700 text-sm">
+                      {post.properties.Date.date.start}
+                    </p>
                     <h2 className="py-5">{post.properties.name.title[0].plain_text}</h2>
                     <img src={post.properties.Images.url} />
                     <p className="py-5">{post.properties.Description.rich_text[0].plain_text}</p>
