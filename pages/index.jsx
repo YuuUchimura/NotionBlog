@@ -2,27 +2,21 @@
 import Link from 'next/link'
 
 //components
-import { Header } from '../components/Header'
-import { Nav } from '../components/Nav'
-import { Container } from '../components/Container'
 import { getNotionData } from '../lib/getNotionData'
-import { MiniProfile } from '../components/MiniProfile'
-import { Footer } from '../components/Footer'
+import { MiniProfile } from '../components/organism/MiniProfile'
+import { DefaultLayout } from '../layouts/DefaultLayout'
 
 export default function Home({ posts }) {
   return (
     <>
-      <Header />
-      <Nav />
-      <Container>
-        <div className="flex py-12">
+      <DefaultLayout>
+        <div className="md:flex py-12">
           <div>
             {!posts.length && <p claasName="text-gray-600 mb-4">No posts found.</p>}
             {posts.map((post) => {
-            console.log(post.properties.Date.date.start)
               return (
                 <Link key={post.id} href={`/${post.properties.Slug.rich_text[0].plain_text}`}>
-                  <a className="w-5/6 text-2xl m-0 flex flex-col mb-12 bg-white shadow-lg">
+                  <a className="lg:w-5/6 md:w-11/12 text-2xl m-0 flex flex-col mb-12 bg-white shadow-lg">
                     <p className="text-left text-gray-700 text-sm">
                       {post.properties.Date.date.start}
                     </p>
@@ -36,8 +30,7 @@ export default function Home({ posts }) {
           </div>
           <MiniProfile />
         </div>
-        <Footer />
-      </Container>
+      </DefaultLayout>
     </>
   )
 }

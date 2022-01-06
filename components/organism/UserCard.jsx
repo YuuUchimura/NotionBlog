@@ -1,9 +1,8 @@
+//lib
 import styled from 'styled-components'
 import Image from 'next/image'
 
-import { Footer } from '../components/Footer'
-
-export const About = () => {
+export const UserCard = () => {
   const HiddenScrollBar = styled.div`
     ::-webkit-scrollbar {
       display: none;

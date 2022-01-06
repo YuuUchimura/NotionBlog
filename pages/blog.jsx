@@ -2,19 +2,14 @@
 import Link from 'next/link'
 import { getNotionData } from '../lib/getNotionData'
 
-
 //components
-import { Header } from '../components/Header'
-import { Nav } from '../components/Nav'
-import { Container } from '../components/Container'
+import { DefaultLayout } from '../layouts/DefaultLayout'
 
 export default function blog({ posts }) {
   return (
     <>
-      <Header />
-      <Nav />
-      <Container>
-        <div className="px-32 py-24 bg-gray-100">
+      <DefaultLayout>
+        <div className="px-32 py-24 bg-gray-100 sm:bg-red-200 ">
           {!posts.length && <p claasName="text-gray-600 mb-4">No posts found.</p>}
           {posts.map((post) => {
             return (
@@ -28,7 +23,7 @@ export default function blog({ posts }) {
             )
           })}
         </div>
-      </Container>
+      </DefaultLayout>
     </>
   )
 }

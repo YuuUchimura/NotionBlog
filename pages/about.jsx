@@ -3,10 +3,7 @@ import styled from 'styled-components'
 import Image from 'next/image'
 
 //components
-import { Header } from '../components/Header'
-import { Nav } from '../components/Nav'
-import { Container } from '../components/Container'
-import { Footer } from '../components/Footer'
+import { DefaultLayout } from '../layouts/DefaultLayout'
 
 export default function About() {
   const HiddenScrollBar = styled.div`
@@ -14,13 +11,12 @@ export default function About() {
       display: none;
     }
   `
+
   return (
     <>
-      <Header />
-      <Nav />
-      <Container>
+      <DefaultLayout>
         <div className="flex flex-col justify-center items-center animate-fade min-h-screen w-full">
-          <div className="flex w-11/12">
+          <div className="py-10 lg:flex w-11/12">
             <div className="w-full">
               <Image
                 className="rounded-full"
@@ -31,7 +27,7 @@ export default function About() {
               />
             </div>
             <div className="w-full">
-              <h2 className="text-5xl">うちむら ゆう</h2>
+              <h2 className="text-4xl sm:text-5xl">うちむら ゆう</h2>
               <p className="my-3">平成８年９月１２日生まれ（２５歳）</p>
               <p className="my-1">茨城県 👉 東京 👉 神奈川県横浜市在住</p>
               <p className="my-1">【趣味】 映画鑑賞・アニメ鑑賞・音楽・筋トレ・旅行</p>
@@ -44,24 +40,23 @@ export default function About() {
               </p>
               <div>
                 <h1 className="mt-10 mb-10 text-5xl">SKILL</h1>
-                <div className="flex flex-wrap">
-                  <Image src="/images/html-5.svg" width={60} height={60} />
-                  <Image src="/images/css-3.svg" width={60} height={60} />
-                  <Image src="/images/javascript.svg" width={60} height={60} />
-                  <Image src="/images/react.svg" width={60} height={60} />
-                  <Image src="/images/nextjs.svg" width={60} height={60} />
-                  <Image src="/images/git-icon.svg" width={60} height={60} />
-                  <Image src="/images/github-icon.svg" width={60} height={60} />
-                  <Image src="/images/firebase.svg" width={60} height={60} />
-                  <Image src="/images/tailwindcss.svg" width={60} height={60} />
-                  <Image src="/images/notion.svg" width={60} height={60} />
+                <div className="flex flex-wrap justify-center">
+                  <Image src="/images/skills/html-5.svg" width={60} height={60} />
+                  <Image src="/images/skills/css-3.svg" width={60} height={60} />
+                  <Image src="/images/skills/javascript.svg" width={60} height={60} />
+                  <Image src="/images/skills/react.svg" width={60} height={60} />
+                  <Image src="/images/skills/nextjs.svg" width={60} height={60} />
+                  <Image src="/images/skills/git-icon.svg" width={60} height={60} />
+                  <Image src="/images/skills/github-icon.svg" width={60} height={60} />
+                  <Image src="/images/skills/firebase.svg" width={60} height={60} />
+                  <Image src="/images/skills/tailwindcss.svg" width={60} height={60} />
+                  <Image src="/images/skills/notion.svg" width={60} height={60} />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <Footer />
-      </Container>
+      </DefaultLayout>
     </>
   )
 }

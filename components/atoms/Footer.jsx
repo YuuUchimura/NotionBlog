@@ -21,7 +21,7 @@ export const Footer = () => {
         </div>
         <div>
           <ExternalLink href="https://github.com/YuuUchimura">
-            <img src="/images/github-icon.svg" width={38} height={38} alt="github-logo" />
+            <img src="/images/skills/github-icon.svg" width={38} height={38} alt="github-logo" />
           </ExternalLink>
         </div>
       </div>

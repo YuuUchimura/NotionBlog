@@ -2,11 +2,8 @@
 import { getNotionData, getPage, getBlocks } from '../lib/getNotionData'
 
 //components
-import { Header } from '../components/Header'
-import { Nav } from '../components/Nav'
 import { Text, ListItem, Heading, ToDo, Toggle } from '../components/ContentBlocks'
 import BlogLayout from '../layouts/BlogLayout'
-import { Footer } from '../components/Footer'
 
 const databaseId = process.env.NOTION_DATABASE_ID
 
@@ -17,10 +14,8 @@ export default function Post({ page, blocks }) {
 
   return (
     <>
-      <Header />
-      <Nav />
       <BlogLayout data={page} content={blocks}>
-        <span className="text-sm text-gray-700 my-5">
+        <span className="text-sm text-gray-700">
           {new Date(page.created_time).toLocaleString(
             { timeZone: 'Asia/Tokyo' },
             {
@@ -82,7 +77,6 @@ export default function Post({ page, blocks }) {
           }
         })}
       </BlogLayout>
-      <Footer />
     </>
   )
 }
