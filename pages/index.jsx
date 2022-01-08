@@ -10,7 +10,7 @@ export default function Home({ posts }) {
   return (
     <>
       <DefaultLayout>
-        <div className="md:flex justify-around pt-10">
+        <div className="lg:flex justify-around pt-10">
           <div className="lg:w-7/12">
             {!posts.length && <p claasName="text-gray-600 mb-4">No posts found.</p>}
             {posts.map((post) => {
@@ -28,12 +28,12 @@ export default function Home({ posts }) {
                 }
               )
               return (
-                <div className="lg:w-full md:w-11/12 text-2xl flex flex-col mb-12 p-10 text-gray-500 bg-white shadow-lg">
+                <div className="w-full text-2xl flex flex-col mb-12 p-10 text-gray-500 bg-white shadow-lg">
                   <p className="text-sm">{createTime}投稿</p>
                   <h2 className="pt-10">{post.properties.name.title[0].plain_text}</h2>
                   <img className="mx-auto" width={300} src={imageSrc} />
+                  <p className="text-sm">{post.properties.Description.rich_text[0].plain_text}</p>
                   <Link key={post.id} href={`/${post.properties.Slug.rich_text[0].plain_text}`}>
-                    {/* {post.properties.Description.rich_text[0].plain_text} */}
                     <a className="w-36 mx-auto p-2 mt-5 border-2 border-solid border-blue-300 hover:border-blue-500 text-blue-300 hover:text-blue-500 text-sm cursor-pointer">
                       LEAD MORE
                     </a>
