@@ -5,7 +5,7 @@ import Image from 'next/image'
 export const MiniProfile = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center lg:w-2/5 md:w-full h-96 bg-white pt-4 px-4 shadow-lg">
+      <div className="flex flex-col justify-center items-center lg:w-1/4 md:w-2/5 h-96 text-gray-500 bg-white pt-4 px-4 shadow-lg">
         <Image
           className="rounded-full"
           src="/images/my_icon.png"

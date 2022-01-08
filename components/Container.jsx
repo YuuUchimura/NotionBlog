@@ -35,7 +35,7 @@ export const Container = (props) => {
         {meta.date && <meta property="article:published_time" content={meta.date} />}
       </Head>
       <div className="bg-gray-100">
-        <main className="w-4/5 mx-auto text-center">{children}</main>
+        <main className="w-10/12 mx-auto text-center">{children}</main>
       </div>
     </>
   )
