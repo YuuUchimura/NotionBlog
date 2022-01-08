@@ -27,7 +27,7 @@ export default function About() {
               />
             </div>
             <div className="w-full">
-              <h2 className="text-4xl sm:text-5xl">うちむら ゆう</h2>
+              <h2 className="text-4xl sm:text-5xl">Yuu Uchimura</h2>
               <p className="my-3">平成８年９月１２日生まれ（２５歳）</p>
               <p className="my-1">茨城県 👉 東京 👉 神奈川県横浜市在住</p>
               <p className="my-1">【趣味】 映画鑑賞・アニメ鑑賞・音楽・筋トレ・旅行</p>
