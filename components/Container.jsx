@@ -1,6 +1,7 @@
 //lib
 import { useRouter } from 'next/router'
 import Head from 'next/head'
+import styled from 'styled-components'
 
 export const Container = (props) => {
   const { children, ...customMeta } = props
@@ -12,6 +13,9 @@ export const Container = (props) => {
     image: '/site.png',
     ...customMeta,
   }
+  const BackGround = styled.div`
+    background: linear-gradient(350deg, #666464 0%, #575656 80%, #f5df4d 50%, #f5df4d 100%);
+  `
 
   return (
     <>
@@ -34,9 +38,11 @@ export const Container = (props) => {
         <meta name="twitter:image" content={meta.image} />
         {meta.date && <meta property="article:published_time" content={meta.date} />}
       </Head>
-      <div className="bg-gray-100">
-        <main className="w-10/12 mx-auto text-center">{children}</main>
-      </div>
+      <BackGround>
+        <div className="bg-black bg-opacity-50">
+          <main className="w-8/12 mx-auto font-display text-center">{children}</main>
+        </div>
+      </BackGround>
     </>
   )
 }

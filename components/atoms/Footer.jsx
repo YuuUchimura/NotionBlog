@@ -11,8 +11,7 @@ const ExternalLink = ({ href, children }) => (
 
 export const Footer = () => {
   return (
-    <footer className="w-full bg-gray-100 py-4">
-      <hr className="w-full border-1 border-gray-300 pb-4" />
+    <footer className="w-full py-4">
       <div className="flex justify-end items-end w-10/12 mx-auto">
         <div className="mr-4">
           <ExternalLink href="https://twitter.com/Yuu_19960912">

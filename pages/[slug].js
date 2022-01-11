@@ -15,7 +15,7 @@ export default function Post({ page, blocks }) {
   return (
     <>
       <BlogLayout data={page} content={blocks}>
-        <span className="text-sm text-gray-700">
+        <span className="text-sm text-gray-100">
           {new Date(page.created_time).toLocaleString(
             { timeZone: 'Asia/Tokyo' },
             {
@@ -26,7 +26,7 @@ export default function Post({ page, blocks }) {
           )}
         </span>
 
-        <h1 className="font-bold text-gray-800 text-base md:text-3xl tracking-tight my-5 text-black">
+        <h1 className="font-bold text-base md:text-3xl tracking-tight my-5 text-gray-100">
           {page.properties.name.title[0].plain_text}
         </h1>
 
@@ -37,16 +37,16 @@ export default function Post({ page, blocks }) {
 
           switch (type) {
             case 'paragraph':
-              return <Text className="text-gray-300" text={value.text} id={id} key={id} />
+              return <Text text={value.text} id={id} key={id} />
 
             case 'heading_1':
-              return <Heading className="text-gray-800" text={text} id={id} level={type} key={id} />
+              return <Heading text={text} id={id} level={type} key={id} />
 
             case 'heading_2':
-              return <Heading className="text-gray-800" text={text} id={id} level={type} key={id} />
+              return <Heading text={text} id={id} level={type} key={id} />
 
             case 'heading_3':
-              return <Heading className="text-gray-800" text={text} id={id} level={type} key={id} />
+              return <Heading text={text} id={id} level={type} key={id} />
             case 'description':
               return <Heading text={text} id={id} level={type} key={id} />
 

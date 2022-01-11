@@ -16,7 +16,7 @@ export default function blog({ posts }) {
               <Link key={post.id} href={`/${post.properties.Slug.rich_text[0].plain_text}`}>
                 <a className="w-3/5 text-2xl m-0 flex flex-col mb-12 bg-white">
                   <h2 className="py-5">{post.properties.name.title[0].plain_text}</h2>
-                  <img className="" src={post.properties.Images.url} />
+                  <img src={post.properties.Images.url} />
                   <p className="py-5">{post.properties.Description.rich_text[0].plain_text}</p>
                 </a>
               </Link>

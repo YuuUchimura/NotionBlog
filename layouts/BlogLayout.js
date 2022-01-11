@@ -4,7 +4,12 @@ import { Nav } from '../components/atoms/Nav'
 import { Footer } from '../components/atoms/Footer'
 import { Container } from '../components/Container'
 
+import styled from 'styled-components'
+
 export default function BlogLayout({ children, data }) {
+  const BackGround = styled.div`
+    background: linear-gradient(350deg, #666464 0%, #575656 80%, #f5df4d 50%, #f5df4d 100%);
+  `
   return (
     // <Container
     //   title={data.properties.name.title[0].plain_text}
@@ -12,16 +17,15 @@ export default function BlogLayout({ children, data }) {
     //   date={new Date(data.properties.Date.date.start)}
     //   type="article"
     // >
-    <>
-      <Header />
-      <Nav />
-      <div className="bg-gray-100 pt-8">
-        <article className="flex flex-col w-4/5 mx-auto p-10 text-left text-base bg-white shadow-lg">
+    <BackGround>
+      <div className="bg-black bg-opacity-50 pt-8">
+        <Header />
+        <article className="flex flex-col w-7/12 mx-auto p-10 text-left text-base">
           {children}
         </article>
+        <Footer />
       </div>
-      <Footer />
-    </>
+    </BackGround>
     // </Container>
   )
 }

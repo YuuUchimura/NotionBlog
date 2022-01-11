@@ -15,8 +15,8 @@ export default function About() {
   return (
     <>
       <DefaultLayout>
-        <div className="flex flex-col justify-center items-center animate-fade min-h-screen w-full">
-          <div className="py-10 lg:flex w-11/12">
+        <div className="animate-fade w-full text-gray-100 mb-12">
+          <div className="lg:flex">
             <div className="w-full">
               <Image
                 className="rounded-full"
