@@ -11,8 +11,8 @@ export const MiniProfile = () => {
         <Image
           className="rounded-full"
           src="/images/my_icon.png"
-          width={300}
-          height={300}
+          width={380}
+          height={380}
           alt="my_icon"
         />
         <div className="flex flex-col mx-auto w-6/12 font-medium">
