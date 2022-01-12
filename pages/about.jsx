@@ -15,7 +15,7 @@ export default function About() {
   return (
     <>
       <DefaultLayout>
-        <div className="animate-fade w-full text-gray-100 mb-12">
+        <div className="animate-fadeup w-full text-gray-100 mb-12">
           <div className="lg:flex">
             <div className="w-full">
               <Image

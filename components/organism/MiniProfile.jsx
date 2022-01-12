@@ -7,7 +7,7 @@ export const MiniProfile = () => {
   return (
     <div>
       <TitleAndNumber number="No.1" title="Profile" />
-      <div className="lg:flex lg:justify-between items-center text-white">
+      <div className="lg:flex lg:justify-around animate-fadeup items-center text-white">
         <Image
           className="rounded-full"
           src="/images/my_icon.png"
