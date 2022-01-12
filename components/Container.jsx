@@ -14,7 +14,7 @@ export const Container = (props) => {
     ...customMeta,
   }
   const BackGround = styled.div`
-    background: linear-gradient(350deg, #666464 0%, #575656 80%, #f5df4d 50%, #f5df4d 100%);
+    background: linear-gradient(350deg, #575656 20%, #575656 80%, #f5df4d 50%, #f5df4d 100%);
   `
 
   return (

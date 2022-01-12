@@ -6,7 +6,6 @@ import { getNotionData } from '../lib/getNotionData'
 import { MiniProfile } from '../components/organism/MiniProfile'
 import { DefaultLayout } from '../layouts/DefaultLayout'
 import { TitleAndNumber } from '../components/morecures/TitileAndNumber'
-import { LinkButton } from '../components/atoms/LinkButton'
 
 export default function Home({ posts }) {
   return (

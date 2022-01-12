@@ -1,9 +1,9 @@
 //components
 import { Header } from '../components/atoms/Header'
-import { Nav } from '../components/atoms/Nav'
 import { Footer } from '../components/atoms/Footer'
 import { Container } from '../components/Container'
 
+//lib
 import styled from 'styled-components'
 
 export default function BlogLayout({ children, data }) {

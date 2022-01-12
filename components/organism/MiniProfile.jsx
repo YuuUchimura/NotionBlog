@@ -1,6 +1,8 @@
 //lib
 import Link from 'next/link'
 import Image from 'next/image'
+
+//components
 import { TitleAndNumber } from '../morecures/TitileAndNumber'
 
 export const MiniProfile = () => {

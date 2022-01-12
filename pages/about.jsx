@@ -26,14 +26,14 @@ export default function About() {
                 alt="my_icon"
               />
             </div>
-            <div className="w-full">
-              <h2 className="text-4xl sm:text-5xl">Yuu Uchimura</h2>
-              <p className="my-3">平成８年９月１２日生まれ（２５歳）</p>
-              <p className="my-1">茨城県 👉 東京 👉 神奈川県横浜市在住</p>
-              <p className="my-1">【趣味】 映画鑑賞・アニメ鑑賞・音楽・筋トレ・旅行</p>
-              <p className="my-1">【好きな言葉】人間は考える葦である</p>
-              <p className="my-1">【好きな食べ物】カレー・寿司</p>
-              <p className="my-1">
+            <div className="w-full leading-8">
+              <h2 className="text-4xl sm:text-5xl mb-12">Yuu Uchimura</h2>
+              <p>平成８年９月１２日生まれ（２５歳）</p>
+              <p>茨城県 👉 東京 👉 神奈川県横浜市在住</p>
+              <p>【趣味】 映画鑑賞・アニメ鑑賞・音楽・筋トレ・旅行</p>
+              <p>【好きな言葉】人間は考える葦である</p>
+              <p>【好きな食べ物】カレー・寿司</p>
+              <p>
                 カレーは好きすぎてスパイスから作っちゃうほどです👳🏽‍♂️
                 <br />
                 不味すぎて二度と作らないですけど（笑）
