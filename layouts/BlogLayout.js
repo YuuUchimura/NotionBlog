@@ -20,7 +20,7 @@ export default function BlogLayout({ children, data }) {
     <BackGround>
       <div className="bg-black bg-opacity-50 pt-8">
         <Header />
-        <article className="flex flex-col w-7/12 mx-auto p-10 text-left text-base">
+        <article className="flex flex-col w-10/12 lg:w-7/12 mx-auto p-10 text-left text-base">
           {children}
         </article>
         <Footer />
