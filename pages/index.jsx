@@ -6,6 +6,8 @@ import { getNotionData } from '../lib/getNotionData'
 import { MiniProfile } from '../components/organism/MiniProfile'
 import { DefaultLayout } from '../layouts/DefaultLayout'
 import { TitleAndNumber } from '../components/morecures/TitileAndNumber'
+import { ExternalLink } from '../components/atoms/Footer'
+
 
 export default function Home({ posts }) {
   return (
@@ -37,12 +39,25 @@ export default function Home({ posts }) {
                 <p>{post.properties.Description.rich_text[0].plain_text}</p>
                 <Link key={post.id} href={`/${post.properties.Slug.rich_text[0].plain_text}`}>
                   <a className="w-36 mx-auto p-2 mt-2 border-2 border-solid border-yellow-300 hover:opacity-70 text-yellow-300 hover:opacity-70 text-sm cursor-pointer">
-                    LEAD MORE
+                    READ MORE
                   </a>
                 </Link>
               </div>
             )
           })}
+        </div>
+        <div className="leading-10 text-white text-left mb-10">
+          <TitleAndNumber number="No.3" title="CONTACT" />
+          <h1>お問い合わせはDM📩でお願いします</h1>
+          <p>また、ご興味があればフォローしていただけると嬉しいです。</p>
+          <div className="flex justify-between w-48 items-center">
+            <img src="/images/twitter.svg" width={100} height={100} alt="twitter-logo" />
+            <ExternalLink href="https://twitter.com/Yuu_19960912">
+              <a className="p-2 border-2 border-solid border-yellow-300 hover:opacity-70 text-yellow-300 hover:opacity-70 text-sm cursor-pointer">
+                FOLLOW ME
+              </a>
+            </ExternalLink>
+          </div>
         </div>
       </DefaultLayout>
     </>
