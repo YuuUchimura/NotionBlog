@@ -6,7 +6,7 @@ export const Header = () => {
     <>
       <div className="flex justify-center items-center animate-bg h-48 md:h-72">
         <Link href="/">
-          <img className="cursor-pointer my-10" width={300} src="/header-logo.png" alt="" />
+          <img className="cursor-pointer my-10" width={500} src="/header-logo.png" alt="" />
         </Link>
       </div>
     </>
