@@ -1,7 +1,3 @@
-//lib
-import Link from 'next/link'
-import Image from 'next/image'
-
 //components
 import { TitleAndNumber } from '../morecures/TitileAndNumber'
 import { ExternalLink } from '../atoms/Footer'
