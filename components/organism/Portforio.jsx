@@ -46,7 +46,6 @@ export const Portforio = () => {
             <Tag content="React" />
           </div>
           <div className="flex">
-            <PortforioDesc description="レスポンシブ対応可" />
             <PortforioDesc description="ゲーム" />
           </div>
         </div>
