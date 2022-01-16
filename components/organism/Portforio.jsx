@@ -1,7 +1,7 @@
 //components
 import { TitleAndNumber } from '../morecures/TitileAndNumber'
 import { ExternalLink } from '../atoms/Footer'
-// import { Tag } from '../atoms/Tag'
+import { Tags } from '../atoms/Tags'
 import { PortforioDesc } from '../atoms/PortforioDesc'
 //mapの要素
 // const pfs = {
@@ -25,8 +25,8 @@ export const Portforio = () => {
             <img src="/images/portforio/salon-beppu.png" />
           </ExternalLink>
           <div className="flex">
-            {/* <Tag content="HTML" />
-            <Tag content="CSS" /> */}
+            <Tags content="HTML" />
+            <Tags content="CSS" />
           </div>
           <div className="flex">
             <PortforioDesc description="模写コーディング" />
@@ -39,9 +39,9 @@ export const Portforio = () => {
             <img src="/images/portforio/snake-game.png" />
           </ExternalLink>
           <div className="flex">
-            {/* <Tag content="HTML" />
-            <Tag content="CSS" />
-            <Tag content="React" /> */}
+            <Tags content="HTML" />
+            <Tags content="CSS" />
+            <Tags content="React" />
           </div>
           <div className="flex">
             <PortforioDesc description="ゲーム" />
