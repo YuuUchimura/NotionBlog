@@ -9,7 +9,6 @@ import { DefaultLayout } from '../layouts/DefaultLayout'
 import { TitleAndNumber } from '../components/morecures/TitileAndNumber'
 import { ExternalLink } from '../components/atoms/Footer'
 
-
 export default function Home({ posts }) {
   return (
     <>
@@ -52,15 +51,17 @@ export default function Home({ posts }) {
         </div>
         <div className="leading-10 text-white text-left mb-10">
           <TitleAndNumber number="No.4" title="CONTACT" />
-          <h1>お問い合わせはDM📩でお願いします</h1>
-          <p>また、ご興味があればフォローしていただけると嬉しいです。</p>
-          <div className="flex justify-between w-48 items-center">
-            <img src="/images/twitter.svg" width={100} height={100} alt="twitter-logo" />
-            <ExternalLink href="https://twitter.com/Yuu_19960912">
-              <a className="p-2 border-2 border-solid border-yellow-300 hover:opacity-70 text-yellow-300 hover:opacity-70 text-sm cursor-pointer">
-                FOLLOW ME
-              </a>
-            </ExternalLink>
+          <div>
+            <h1>お問い合わせはDM📩でお願いします</h1>
+            <p>また、ご興味があればフォローしていただけると嬉しいです。</p>
+            <div className="flex justify-around mt-5 w-4/5 items-center">
+              <img src="/images/twitter.svg" width={100} height={100} alt="twitter-logo" />
+              <ExternalLink href="https://twitter.com/Yuu_19960912">
+                <a className="p-2 border-2 border-solid border-yellow-300 hover:opacity-70 text-yellow-300 hover:opacity-70 text-sm cursor-pointer">
+                  FOLLOW ME
+                </a>
+              </ExternalLink>
+            </div>
           </div>
         </div>
       </DefaultLayout>
