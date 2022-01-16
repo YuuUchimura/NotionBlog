@@ -3,14 +3,14 @@ import { TitleAndNumber } from '../morecures/TitileAndNumber'
 import { ExternalLink } from '../atoms/Footer'
 import { Tag } from '../atoms/Tag'
 import { PortforioDesc } from '../atoms/PortforioDesc'
-const pfs = {
-  title: ['WEBサイト', 'SNAKE-GAME'],
-  url: [
-    'https://yuuuchimura.github.io/salon_beppu/',
-    'https://yuuuchimura.github.io/hooks-snake-game/',
-  ],
-  img: ['/images/portforio/salon-beppu.png', '/images/portforio/snake-game.png'],
-}
+// const pfs = {
+//   title: ['WEBサイト', 'SNAKE-GAME'],
+//   url: [
+//     'https://yuuuchimura.github.io/salon_beppu/',
+//     'https://yuuuchimura.github.io/hooks-snake-game/',
+//   ],
+//   img: ['/images/portforio/salon-beppu.png', '/images/portforio/snake-game.png'],
+// }
 
 export const Portforio = () => {
   return (
