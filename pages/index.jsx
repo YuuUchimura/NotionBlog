@@ -4,6 +4,7 @@ import Link from 'next/link'
 //components
 import { getNotionData } from '../lib/getNotionData'
 import { MiniProfile } from '../components/organism/MiniProfile'
+import { Portforio } from '../components/organism/Portforio'
 import { DefaultLayout } from '../layouts/DefaultLayout'
 import { TitleAndNumber } from '../components/morecures/TitileAndNumber'
 import { ExternalLink } from '../components/atoms/Footer'
@@ -14,7 +15,7 @@ export default function Home({ posts }) {
     <>
       <DefaultLayout>
         <MiniProfile />
-        <TitleAndNumber number="No.2" title="Blog" />
+        <TitleAndNumber number="No.2" title="BLOG" />
         <div className="flex flex-wrap justify-around">
           {!posts.length && <p claasName="text-gray-600 mb-4">No posts found.</p>}
           {posts.map((post) => {
@@ -46,8 +47,11 @@ export default function Home({ posts }) {
             )
           })}
         </div>
+        <div>
+          <Portforio />
+        </div>
         <div className="leading-10 text-white text-left mb-10">
-          <TitleAndNumber number="No.3" title="CONTACT" />
+          <TitleAndNumber number="No.4" title="CONTACT" />
           <h1>お問い合わせはDM📩でお願いします</h1>
           <p>また、ご興味があればフォローしていただけると嬉しいです。</p>
           <div className="flex justify-between w-48 items-center">

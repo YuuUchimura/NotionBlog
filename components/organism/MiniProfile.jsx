@@ -8,7 +8,7 @@ import { TitleAndNumber } from '../morecures/TitileAndNumber'
 export const MiniProfile = () => {
   return (
     <div>
-      <TitleAndNumber number="No.1" title="Profile" />
+      <TitleAndNumber number="No.1" title="PROFILE" />
       <div className="lg:flex lg:justify-around animate-fadeup items-center text-white">
         <Image
           className="rounded-full"
