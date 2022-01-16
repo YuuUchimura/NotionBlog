@@ -20,7 +20,7 @@ export const Portforio = () => {
   return (
     <div>
       <TitleAndNumber number="No.3" title="PORTFORIO" />
-      <div className="flex justify-around">
+      <div className="lg:flex justify-around">
         {/* {Object.keys(pfs).map((pf ,index) => {
           {
             console.log(pf)
