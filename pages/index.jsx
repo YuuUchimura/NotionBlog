@@ -52,7 +52,7 @@ export default function Home({ posts }) {
         <div className="leading-10 text-white text-left mb-10">
           <TitleAndNumber number="No.4" title="CONTACT" />
           <div>
-            <h1>お問い合わせはDM📩でお願いします</h1>
+            <h1>お問い合わせはDM📩でお願いします。</h1>
             <p>また、ご興味があればフォローしていただけると嬉しいです。</p>
             <div className="flex justify-around mt-5 w-4/5 items-center">
               <img src="/images/twitter.svg" width={100} height={100} alt="twitter-logo" />
