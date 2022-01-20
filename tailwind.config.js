@@ -7,7 +7,8 @@ module.exports = {
   darkMode: false,
   theme: {
     fontFamily: {
-      display: ['Impact'],
+      display: ['Impact', 'Yu Gothic'],
+      Comic: ['Courier New'],
     },
     extend: {
       animation: {

@@ -49,13 +49,13 @@ export default function Home({ posts }) {
         <div>
           <Portforio />
         </div>
-        <div className="leading-10 text-white text-left mb-10">
+        <div className="leading-5 text-white text-left mb-10">
           <TitleAndNumber number="No.4" title="CONTACT" />
           <div>
-            <h1>お問い合わせはDM📩でお願いします。</h1>
+            <h1>お問い合わせはTwitter DM📩でお願いします。</h1>
             <p>また、ご興味があればフォローしていただけると嬉しいです。</p>
-            <div className="flex justify-around mt-5 w-4/5 items-center">
-              <img src="/images/twitter.svg" width={100} height={100} alt="twitter-logo" />
+            <div className="mt-5">
+              {/* <img src="/images/twitter.svg" width={100} height={100} alt="twitter-logo" /> */}
               <ExternalLink href="https://twitter.com/Yuu_19960912">
                 <a className="p-2 border-2 border-solid border-yellow-300 hover:opacity-70 text-yellow-300 hover:opacity-70 text-sm cursor-pointer">
                   FOLLOW ME
@@ -75,7 +75,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       posts: database,
-      revalidate: 10,
+      // revalidate: 10,
     },
   }
 }

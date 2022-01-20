@@ -22,8 +22,8 @@ export default function BlogLayout({ children, data }) {
         <Header />
         <article className="flex flex-col w-10/12 lg:w-7/12 mx-auto p-10 text-left text-base">
           {children}
-        </article>
         <Footer />
+        </article>
       </div>
     </BackGround>
     // </Container>

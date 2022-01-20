@@ -4,7 +4,7 @@ import Head from 'next/head'
 import styled from 'styled-components'
 
 const BackGround = styled.div`
-  background: linear-gradient(350deg, #575656 0%, #575656 80%, #f5df4d 50%, #f5df4d 100%);
+  background: linear-gradient(350deg, #f5df4d -100%, #575656 85%, #f5df4d 85%, #f5df4d 100%);
 `
 
 export const Container = (props) => {
