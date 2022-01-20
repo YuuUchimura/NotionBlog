@@ -16,7 +16,7 @@ export const AboutContent = () => {
   return (
     <>
       <div>
-        <h1 className="text-7xl mb-10">Yuu Uchimura</h1>
+        <h1 className="text-4xl lg:text-7xl mb-10">Yuu Uchimura</h1>
         <p>
           平成８年９月１２日生まれ（２５歳）
           <br /> 茨城県 👉 東京 👉 神奈川県横浜市在住
