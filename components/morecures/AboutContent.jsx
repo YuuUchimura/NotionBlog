@@ -4,7 +4,7 @@ import { AboutTitle } from "../atoms/AboutTitle"
 
 export const AboutContent = () => {
   const contents = [
-    '将来的な目標はフルスタックエンジニア！誰にも負けない志の高さ！',
+    '目指すはフルスタックエンジニア！誰にも負けない志の高さ！',
     '新しい技術に対する学習意欲！',
     '目標達成のためなら努力を惜しまない貪欲さ！',
     '難しい課題にぶちあたった時の諦めない粘り強さ！',

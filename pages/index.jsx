@@ -38,7 +38,7 @@ export default function Home({ posts }) {
                 <img className="mx-auto" width={200} src={post.properties.Images.url} />
                 <p>{post.properties.Description.rich_text[0].plain_text}</p>
                 <Link key={post.id} href={`/${post.properties.Slug.rich_text[0].plain_text}`}>
-                  <a className="w-36 mx-auto p-2 mt-2 border-2 border-solid border-yellow-300 hover:opacity-70 text-yellow-300 hover:opacity-70 text-sm cursor-pointer">
+                  <a className="w-36 mx-auto p-2 mt-2 border-2 border-solid border-yellow-300 hover:opacity-70 text-yellow-300 hover:opacity-70 text-base cursor-pointer">
                     READ MORE
                   </a>
                 </Link>
@@ -57,7 +57,7 @@ export default function Home({ posts }) {
             <div className="mt-5">
               {/* <img src="/images/twitter.svg" width={100} height={100} alt="twitter-logo" /> */}
               <ExternalLink href="https://twitter.com/Yuu_19960912">
-                <a className="p-2 border-2 border-solid border-yellow-300 hover:opacity-70 text-yellow-300 hover:opacity-70 text-sm cursor-pointer">
+                <a className="p-2 border-2 border-solid border-yellow-300 hover:opacity-70 text-yellow-300 hover:opacity-70 text-base cursor-pointer">
                   FOLLOW ME
                 </a>
               </ExternalLink>
