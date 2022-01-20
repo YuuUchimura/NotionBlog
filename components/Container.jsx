@@ -41,7 +41,7 @@ export const Container = (props) => {
       </Head>
       <BackGround>
         <div className="bg-black bg-opacity-50">
-          <main className="w-10/12 md:w-8/12 mx-auto font-2xl font-display text-center">{children}</main>
+          <main className="w-10/12 md:w-8/12 mx-auto text-xl font-display text-center">{children}</main>
         </div>
       </BackGround>
     </>
