@@ -17,9 +17,9 @@ export const MiniProfile = () => {
           height={380}
           alt="my_icon"
         />
-        <div className="flex flex-col w-full m-0 lg:w-5/12 font-medium">
+        <div className="flex flex-col m-0 lg:w-4/12 font-medium">
           <h2 className="text-4xl lg:text-5xl my-5">Yuu Uchimura</h2>
-          <p>
+          <p className="text-left">
             高校卒業後就職のため上京。
             <br />
             約５年間勤めるも、現職で使用しているアプリが使いづらく、’どうにか改善できないものか’と気になって調べながら作っているうちに楽しくなり

@@ -4,7 +4,7 @@ import { AboutTitle } from "../atoms/AboutTitle"
 
 export const AboutContent = () => {
   const contents = [
-    '目指すはフルスタックエンジニア！誰にも負けない志の高さ！',
+    '将来は、自分の新規事業を立ち上げたいと思っています！誰にも負けない志の高さ！',
     '新しい技術に対する学習意欲！',
     '目標達成のためなら努力を惜しまない貪欲さ！',
     '難しい課題にぶちあたった時の諦めない粘り強さ！',
@@ -16,10 +16,12 @@ export const AboutContent = () => {
   return (
     <>
       <div>
-        <h1 className="text-4xl lg:text-7xl mb-10">Yuu Uchimura</h1>
+        <h1 className="text-4xl  lg:text-7xl mb-10">Yuu Uchimura</h1>
         <p>
           平成８年９月１２日生まれ（２５歳）
           <br /> 茨城県 👉 東京 👉 神奈川県横浜市在住
+          <div className="text-left">
+
           <br /> 【趣味】 映画鑑賞・アニメ鑑賞・音楽・筋トレ・旅行
           <br /> 【好きな言葉】人間は考える葦である
           <br /> 【好きな食べ物】カレー・寿司
@@ -35,7 +37,9 @@ export const AboutContent = () => {
           <br />
           スポンジのような吸収力でみるみる知識を身に付け、2022年1月に卒業。
           <br />
-          現在も成長中。
+
+
+          </div>
         </p>
         <br />
         <AboutTitle title="My Potential" />

@@ -27,9 +27,7 @@ export default function About() {
                 alt="my_icon"
               />
             </div>
-            <div className="w-full leading-8">
-
-
+            <div className="lg:w-7/12 leading-8">
               <AboutContent />
             </div>
           </div>

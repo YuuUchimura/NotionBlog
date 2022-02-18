@@ -18,11 +18,6 @@ export default function Home({ posts }) {
         <div className="flex flex-wrap justify-around">
           {!posts.length && <p claasName="text-gray-600 mb-4">No posts found.</p>}
           {posts.map((post) => {
-            // const imageSrc =
-            //   post.properties.Images.files[0].type === 'external'
-            //     ? post.properties.Images.files[0].external.url
-            //     : post.properties.Images.files[0].file.url
-
             const createTime = new Date(post.created_time).toLocaleString(
               { timeZone: 'Asia/Tokyo' },
               {
