@@ -18,7 +18,20 @@ export const Portforio = () => {
     <div>
       <TitleAndNumber number="No.3" title="PORTFORIO" />
       {/* 後にmapで回す */}
-      <div className="lg:flex justify-around">
+      <div className="lg:flex flex-wrap justify-around">
+        <div className="flex flex-col justify-between lg:w-5/12 w-full text-sm mb-12 p-5 text-white bg-black shadow-lg border-t-4 border-solid border-yellow-300">
+          <h2 className="text-xl">Dating</h2>
+          <ExternalLink href="https://dating-e2e6a.firebaseapp.com/">
+            <img src="/images/portforio/Dating.png" />
+          </ExternalLink>
+          <div className="flex">
+            <Tags content="React" />
+            <Tags content="Firebase" />
+          </div>
+          <div className="flex">
+            <PortforioDesc description="デートプラン投稿・検索アプリ" />
+          </div>
+        </div>
         <div className="flex flex-col justify-between lg:w-5/12 w-full text-sm mb-12 p-5 text-white bg-black shadow-lg border-t-4 border-solid border-yellow-300">
           <h2 className="text-xl">WEBサイト</h2>
           <ExternalLink href="https://yuuuchimura.github.io/salon_beppu/">
