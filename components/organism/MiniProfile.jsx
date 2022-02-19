@@ -18,7 +18,7 @@ export const MiniProfile = () => {
           alt="my_icon"
         />
         <div className="flex flex-col m-0 lg:w-4/12 font-medium">
-          <h2 className="text-4xl lg:text-5xl my-5">Yuu Uchimura</h2>
+          <h2 className="text-6xl lg:text-5xl my-5">Yuu Uchimura</h2>
           <p className="text-left">
             高校卒業後就職のため上京。
             <br />
