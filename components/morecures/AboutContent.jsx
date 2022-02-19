@@ -1,10 +1,10 @@
+import React, { useState } from 'react'
 import Image from 'next/image'
-
-import { AboutTitle } from "../atoms/AboutTitle"
+import { AboutTitle } from '../atoms/AboutTitle'
 
 export const AboutContent = () => {
   const contents = [
-    '将来は、自分の新規事業を立ち上げたいと思っています！誰にも負けない志の高さ！',
+    '将来は、自分の新規事業を立ち上げたいと思っています！',
     '新しい技術に対する学習意欲！',
     '目標達成のためなら努力を惜しまない貪欲さ！',
     '難しい課題にぶちあたった時の諦めない粘り強さ！',
@@ -13,32 +13,44 @@ export const AboutContent = () => {
     'こころも笑顔もやさしさ満点！たまに損します。。。',
   ]
 
+  const skillImages = [
+    '/images/skills/html-5.svg',
+    '/images/skills/css-3.svg',
+    '/images/skills/javascript.svg',
+    '/images/skills/react.svg',
+    '/images/skills/nextjs.svg',
+    '/images/skills/git-icon.svg',
+    '/images/skills/github-icon.svg',
+    '/images/skills/firebase.svg',
+    '/images/skills/tailwindcss.svg',
+    '/images/skills/notion.svg',
+  ]
+
   return (
     <>
-      <div>
-        <h1 className="text-4xl  lg:text-7xl mb-10">Yuu Uchimura</h1>
+      <div className="text-left">
+        <h1 className="text-center text-6xl lg:text-7xl my-10">Yuu Uchimura</h1>
         <p>
-          平成８年９月１２日生まれ（２５歳）
-          <br /> 茨城県 👉 東京 👉 神奈川県横浜市在住
-          <div className="text-left">
-
-          <br /> 【趣味】 映画鑑賞・アニメ鑑賞・音楽・筋トレ・旅行
-          <br /> 【好きな言葉】人間は考える葦である
-          <br /> 【好きな食べ物】カレー・寿司
-          <br />
-          カレーは好きすぎてスパイスから作っちゃうほどです👳🏽‍♂️
-          <br />
-          不味すぎて二度と作らないですけど（笑）
-          <br /> <br />
-          2020年10月にプログラミングをスタート。
-          <br />
-          最初は独学で勉強をしていましたが、
-          独学だとどうしても学習速度が遅かったため翌年６月にプログラミングスクールに通うことを決意。
-          <br />
-          スポンジのような吸収力でみるみる知識を身に付け、2022年1月に卒業。
-          <br />
-
-
+          <div className="text-center">
+            平成８年９月１２日生（２５歳）
+            <br /> 茨城 👉 東京 👉 神奈川県横浜市在住
+          </div>
+          <div>
+            <br /> 【趣味】 映画鑑賞・アニメ鑑賞・筋トレ・旅行・サウナ
+            <br /> 【好きな言葉】人間は考える葦である
+            <br /> 【好きな食べ物】カレー・寿司 カレーは好きすぎてスパイスから作っちゃうほどです👳🏽‍♂️
+            <br />
+            不味すぎて二度と作らないですけど（笑）
+            <br />
+            <br />
+            2020年10月にプログラミングをスタート。
+            <br />
+            最初は独学で勉強をしていましたが、
+            独学だとどうしても学習速度が遅かったため翌年６月にプログラミングスクールに通うことを決意。
+            <br />
+            スポンジのような吸収力でみるみる知識を身に付け、2022年1月に卒業。
+            <br />
+            新規事業開発に強いエンジニアになり、将来は自分で新規事業を立ち上げたいと思っています！
           </div>
         </p>
         <br />
@@ -56,17 +68,10 @@ export const AboutContent = () => {
       </div>
       <div>
         <AboutTitle title="SKILL" />
-        <div className="flex flex-wrap justify-center">
-          <Image src="/images/skills/html-5.svg" width={60} height={60} />
-          <Image src="/images/skills/css-3.svg" width={60} height={60} />
-          <Image src="/images/skills/javascript.svg" width={60} height={60} />
-          <Image src="/images/skills/react.svg" width={60} height={60} />
-          <Image src="/images/skills/nextjs.svg" width={60} height={60} />
-          <Image src="/images/skills/git-icon.svg" width={60} height={60} />
-          <Image src="/images/skills/github-icon.svg" width={60} height={60} />
-          <Image src="/images/skills/firebase.svg" width={60} height={60} />
-          <Image src="/images/skills/tailwindcss.svg" width={60} height={60} />
-          <Image src="/images/skills/notion.svg" width={60} height={60} />
+        <div className="flex justify-center flex-wrap">
+          {skillImages.map((skillImage, i) => {
+            return <img className="mx-3 my-2" src={skillImage} width={60} height={60} />
+          })}
         </div>
       </div>
     </>

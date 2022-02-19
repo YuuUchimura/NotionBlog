@@ -19,12 +19,12 @@ export const Portforio = () => {
       <TitleAndNumber number="No.3" title="PORTFORIO" />
       {/* 後にmapで回す */}
       <div className="lg:flex flex-wrap justify-around">
-        <div className="flex flex-col justify-between lg:w-5/12 w-full text-sm mb-12 p-5 text-white bg-black shadow-lg border-t-4 border-solid border-yellow-300">
-          <h2 className="text-xl">Dating</h2>
+        <div className="flex flex-col justify-between lg:w-5/12 w-full mb-12 p-5 text-white bg-black shadow-lg border-t-4 border-solid border-yellow-300">
+          <h2 className="text-2xl">Dating</h2>
           <ExternalLink href="https://dating-e2e6a.firebaseapp.com/">
             <img src="/images/portforio/Dating.png" />
           </ExternalLink>
-          <div className="flex">
+          <div className="flex text-xl">
             <Tags content="React" />
             <Tags content="Firebase" />
           </div>
@@ -32,12 +32,12 @@ export const Portforio = () => {
             <PortforioDesc description="デートプラン投稿・検索アプリ" />
           </div>
         </div>
-        <div className="flex flex-col justify-between lg:w-5/12 w-full text-sm mb-12 p-5 text-white bg-black shadow-lg border-t-4 border-solid border-yellow-300">
-          <h2 className="text-xl">WEBサイト</h2>
+        <div className="flex flex-col justify-between lg:w-5/12 w-full mb-12 p-5 text-white bg-black shadow-lg border-t-4 border-solid border-yellow-300">
+          <h2 className="text-2xl">WEBサイト</h2>
           <ExternalLink href="https://yuuuchimura.github.io/salon_beppu/">
             <img src="/images/portforio/salon-beppu.png" />
           </ExternalLink>
-          <div className="flex">
+          <div className="flex text-xl">
             <Tags content="HTML" />
             <Tags content="CSS" />
           </div>
@@ -46,12 +46,12 @@ export const Portforio = () => {
             <PortforioDesc description="レスポンシブ対応可" />
           </div>
         </div>
-        <div className="flex flex-col justify-between lg:w-5/12 w-full text-sm mb-12 p-5 text-white bg-black shadow-lg border-t-4 border-solid border-yellow-300">
-          <h2 className="text-xl">SNAKEGAME</h2>
+        <div className="flex flex-col justify-between lg:w-5/12 w-full mb-12 p-5 text-white bg-black shadow-lg border-t-4 border-solid border-yellow-300">
+          <h2 className="text-2xl">SNAKEGAME</h2>
           <ExternalLink href="https://yuuuchimura.github.io/hooks-snake-game/">
             <img src="/images/portforio/snake-game.png" />
           </ExternalLink>
-          <div className="flex">
+          <div className="flex text-xl">
             <Tags content="HTML" />
             <Tags content="CSS" />
             <Tags content="React" />
